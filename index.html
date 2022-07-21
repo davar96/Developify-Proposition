@@ -7,6 +7,7 @@
     <title>Developify - Proposition</title>
 
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/queries.css" />
 
     <!-- Google Font Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,9 +17,9 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="top">
     <!-- Header -->
-    <header class="header">
+    <header class="header" data-header>
       <div class="container">
         <div class="overlay" data-overlay></div>
 
@@ -65,15 +66,6 @@
             </li>
           </ul>
         </nav>
-
-        <a href="#" class="btn">
-          <ion-icon
-            name="chevron-forward-outline"
-            aria-hidden="true"
-          ></ion-icon>
-
-          <span>Obtenir un devis</span>
-        </a>
 
         <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
           <ion-icon name="menu-outline"></ion-icon>
@@ -320,64 +312,347 @@
         </section>
 
         <!-- Portfolio -->
-        <section class="portfolio">
-          <div class="container grid grid--2-cols grid--center-v">
-            <div class="portfolio-text-box">
-              <h3 class="heading-tertiary">
-                Tell us what you like (and what not)
-              </h3>
-              <p class="portfolio-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                maiores provident necessitatibus perferendis adipisci reiciendis
-                dignissimos sequi blanditiis nisi vero!
-              </p>
-            </div>
-            <div class="portfolio-img-box">
-              <img
-                src="/assets/img/about-banner.svg"
-                class="portfolio-img"
-                alt=""
-              />
-            </div>
+        <section class="section portfolio" id="portfolio">
+          <div class="container">
+            <h2 class="h2 section-title underline">Notre portfolio</h2>
 
-            <div class="portfolio-img-box">
-              <img
-                src="/assets/img/about-banner.svg"
-                class="portfolio-img"
-                alt="Meal plan"
-              />
-            </div>
+            <ul class="portfolio-list">
+              <li>
+                <div class="portfolio-card">
+                  <figure class="banner">
+                    <a href="#">
+                      <img
+                        src="./assets/img/Agence du court metrage.png"
+                        width="750"
+                        height="350"
+                        loading="lazy"
+                        alt="Vestibulum massa arcu, consectetu pellentesque scelerisque."
+                        class="img-cover"
+                      />
+                    </a>
+                  </figure>
 
-            <div class="portfolio-text-box">
-              <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
-              <p class="portfolio-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
-                autem quos optio totam porro odio culpa at maxime? Vitae, ipsum.
-              </p>
-            </div>
+                  <div class="portfolio-content">
+                    <h3 class="h3 title">
+                      <a href="#" style="color: var(--green)">
+                        L'agence du court metrage
+                      </a>
+                    </h3>
 
-            <div class="portfolio-text-box">
-              <h3 class="heading-tertiary">Receive meals at convenient time</h3>
-              <p class="portfolio-description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                dolorem totam possimus inventore culpa ipsa rem! Commodi iste
-                cum nesciunt.
-              </p>
-            </div>
+                    <p class="text">
+                      Sed quis sagittis velit. Aliquam velit eros, bibendum ut
+                      massa et, consequat laoreet erat nam ac imperdiet.
+                    </p>
+                  </div>
+                </div>
+              </li>
 
-            <div class="portfolio-img-box">
-              <img
-                src="/assets/img/about-banner.svg"
-                class="portfolio-img"
-                alt=""
-              />
+              <li>
+                <div class="portfolio-card">
+                  <figure class="banner">
+                    <a href="#">
+                      <img
+                        src="./assets/img/Agence du court metrage.png"
+                        width="750"
+                        height="350"
+                        loading="lazy"
+                        alt="Quisque egestas iaculis felis eget placerat ut pulvinar mi."
+                        class="img-cover"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="portfolio-content">
+                    <h3 class="h3 title">
+                      <a href="#" style="color: var(--green)">
+                        L'agence du court metrage
+                      </a>
+                    </h3>
+
+                    <p class="text">
+                      Sed quis sagittis velit. Aliquam velit eros, bibendum ut
+                      massa et, consequat laoreet erat nam ac imperdiet.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="portfolio-card">
+                  <figure class="banner">
+                    <a href="#">
+                      <img
+                        src="./assets/img/Agence du court metrage.png"
+                        width="750"
+                        height="350"
+                        loading="lazy"
+                        alt="Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere."
+                        class="img-cover"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="portfolio-content">
+                    <h3 class="h3 title">
+                      <a href="#" style="color: var(--green)">
+                        L'agence du court metrage
+                      </a>
+                    </h3>
+
+                    <p class="text">
+                      Sed quis sagittis velit. Aliquam velit eros, bibendum ut
+                      massa et, consequat laoreet erat nam ac imperdiet.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="portfolio-card">
+                  <figure class="banner">
+                    <a href="#">
+                      <img
+                        src="./assets/img/Agence du court metrage.png"
+                        width="750"
+                        height="350"
+                        loading="lazy"
+                        alt="Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis."
+                        class="img-cover"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="portfolio-content">
+                    <h3 class="h3 title">
+                      <a href="#" style="color: var(--green)">
+                        L'agence du court metrage
+                      </a>
+                    </h3>
+
+                    <p class="text">
+                      Sed quis sagittis velit. Aliquam velit eros, bibendum ut
+                      massa et, consequat laoreet erat nam ac imperdiet.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="portfolio-card">
+                  <figure class="banner">
+                    <a href="#">
+                      <img
+                        src="./assets/img/Agence du court metrage.png"
+                        width="750"
+                        height="350"
+                        loading="lazy"
+                        alt="Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis."
+                        class="img-cover"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="portfolio-content">
+                    <h3 class="h3 title">
+                      <a href="#" style="color: var(--green)">
+                        L'agence du court metrage
+                      </a>
+                    </h3>
+
+                    <p class="text">
+                      Sed quis sagittis velit. Aliquam velit eros, bibendum ut
+                      massa et, consequat laoreet erat nam ac imperdiet.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="portfolio-card">
+                  <figure class="banner">
+                    <a href="#">
+                      <img
+                        src="./assets/img/Agence du court metrage.png"
+                        width="750"
+                        height="350"
+                        loading="lazy"
+                        alt="Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis."
+                        class="img-cover"
+                      />
+                    </a>
+                  </figure>
+
+                  <div class="portfolio-content">
+                    <h3 class="h3 title">
+                      <a href="#" style="color: var(--green)">
+                        L'agence du court metrage
+                      </a>
+                    </h3>
+
+                    <p class="text">
+                      Sed quis sagittis velit. Aliquam velit eros, bibendum ut
+                      massa et, consequat laoreet erat nam ac imperdiet.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Contact us -->
+        <section class="section-contact" id="contact">
+          <div class="container">
+            <div class="contact">
+              <div class="contact-text-box">
+                <h2 class="heading-secondary">Envoyez nous un mail</h2>
+                <form class="contact-form" name="sign-up" netlify>
+                  <div>
+                    <label for="company">Société</label>
+                    <input
+                      id="company-name"
+                      name="company-name"
+                      type="text"
+                      placeholder="Jak Solutions (facultatif)"
+                    />
+                  </div>
+                  <div>
+                    <label for="full-name">Nom et prénom</label>
+                    <input
+                      id="full-name"
+                      name="full-name"
+                      type="text"
+                      placeholder="Jon Doe"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="email">Adress mail</label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="doe@gmail.com"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label for="select-where"
+                      >Où avez-vous entendu parler de nous?</label
+                    >
+                    <select name="select-where" id="select-where" required>
+                      <option value="">Veuillez choisir une option:</option>
+                      <option value="friends">Friends and family</option>
+                      <option value="facebook">Facebook</option>
+                      <option value="linkedin">Linkedin</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label for="">Message</label>
+                    <textarea
+                      rows="20"
+                      cols="40"
+                      name="message"
+                      class="contact__input"
+                      required
+                    ></textarea>
+                  </div>
+                  <br />
+                  <button class="btn">Envoyer</button>
+                </form>
+              </div>
+              <div class="contact-img-box" role="img" aria-label=""></div>
             </div>
           </div>
         </section>
       </article>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-top section">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">Developify</a>
+
+            <p class="text">
+              Nous créons des applications WEB sur mesure qui font décoller
+              votre business
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a
+                  href="https://www.facebook.com/Developify"
+                  class="social-link"
+                >
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contactez nous</p>
+            </li>
+
+            <li class="footer-item">
+              <div class="footer-item-icon">
+                <ion-icon name="call"></ion-icon>
+              </div>
+
+              <div>
+                <a href="tel:+32470791480" class="footer-item-link"
+                  >+32/470-79-14-80</a
+                >
+              </div>
+            </li>
+
+            <li class="footer-item">
+              <div class="footer-item-icon">
+                <ion-icon name="mail"></ion-icon>
+              </div>
+
+              <div>
+                <a href="mailto:info@developify.be" class="footer-item-link"
+                  >info@developify.be</a
+                >
+              </div>
+            </li>
+
+            <li class="footer-item">
+              <div class="footer-item-icon">
+                <ion-icon name="location"></ion-icon>
+              </div>
+
+              <address class="footer-item-link">
+                Av. Reine Astrid 59, 1780 Wemmel
+              </address>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          Copyright &copy; by Developify.<br />
+          <span class="copyright-link year">1999</span> All Right Reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- Go to top button -->
+    <a href="#top" class="go-top active" aria-label="Go To Top" data-go-top>
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
 
     <script src="./assets/script.js"></script>
     <!-- Ionicon Link -->

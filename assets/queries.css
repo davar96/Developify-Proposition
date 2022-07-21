@@ -1,0 +1,160 @@
+/* Queries */
+
+/* Responsive for larger than 992px screen */
+
+@media (min-width: 992px) {
+  /* CUSTOM PROPERTY */
+
+  :root {
+    /* typography */
+
+    --fs-1: 5.4rem;
+  }
+
+  /* REUSED STYLE */
+
+  .container {
+    max-width: 950px;
+  }
+
+  /* HEADER */
+
+  .header {
+    padding-block: 20px;
+  }
+
+  .overlay,
+  .nav-open-btn,
+  .navbar-top {
+    display: none;
+  }
+
+  .navbar,
+  .navbar.active {
+    all: unset;
+    margin-inline-start: auto;
+  }
+
+  .header .btn {
+    margin-inline-start: 0;
+  }
+
+  .navbar-list {
+    display: flex;
+    gap: 25px;
+  }
+
+  .navbar-item:not(:last-child) {
+    border-bottom: none;
+  }
+
+  .navbar-link {
+    color: var(--color);
+  }
+
+  /* HERO */
+
+  .hero {
+    min-height: 700px;
+  }
+
+  /* ABOUT */
+
+  .about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  /* SERVICE */
+
+  .service-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* FEATURES */
+
+  .features-list {
+    grid-template-columns: 1fr;
+  }
+
+  .features .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .features .section-title {
+    grid-column: 1 / 4;
+  }
+
+  .features-banner {
+    margin-block: 0;
+    display: grid;
+    place-items: center;
+  }
+
+  /* FOOTER */
+
+  .footer-top .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer-brand {
+    grid-column: 1 / 5;
+  }
+
+  .footer-brand .text {
+    max-width: 45ch;
+  }
+}
+
+/* Responsive for larger than 1200px screen */
+
+@media (min-width: 1200px) {
+  /* REUSED STYLE */
+
+  .container {
+    max-width: 1200px;
+  }
+
+  .section-title {
+    --fs-3: 4.6rem;
+  }
+
+  /* HERO */
+
+  .hero {
+    min-height: 800px;
+  }
+
+  /* PORTFOLIO */
+
+  .portfolio-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portfolio-card {
+    height: 100%;
+  }
+
+  .portfolio-card .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* FOOTER */
+
+  .footer-top .container {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .logos img {
+    height: 6.2rem;
+  }
+}
