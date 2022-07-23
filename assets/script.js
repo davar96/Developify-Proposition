@@ -28,6 +28,7 @@ for (let i = 0; i < navbarLinks.length; i++) {
 }
 
 // Dynamic footer year
+
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
@@ -45,4 +46,13 @@ window.addEventListener("scroll", function () {
     header.classList.remove("active");
     goTopBtn.classList.remove("active");
   }
+});
+
+// Typing effect for the hero section
+
+let typed = new Typed(".auto-type", {
+  strings: [
+    "Nous créons des applications WEB sur mesure qui font décoller votre business",
+  ],
+  typeSpeed: 30,
 });
